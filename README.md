@@ -1,2 +1,2 @@
 # Acting
-Online theater system
+Online multiplayer theater system built with Unity and Normcore
