@@ -59,10 +59,7 @@ namespace Normal.Realtime.Serialization {
             Type   modelClass     = _script.GetClass();
             string classNamespace = modelClass.Namespace;
             string className      = modelClass.Name;
-
-            if (modelClass.BaseType != typeof(System.Object))
-                throw new ArgumentException("RealtimeModel is currently a subclass of '" + modelClass.BaseType + "'. RealtimeModels cannot have a superclass.");
-
+            //string baseClassName  = modelClass.BaseType.Name;
             bool   hasMetaModel   = false;
 
             RealtimeModelAttribute realtimeModelAttribute = GetRealtimeModelAttribute(modelClass);
@@ -264,7 +261,6 @@ namespace Normal.Realtime.Serialization {
             foreach (KeyValuePair<uint, FieldInfo> property in allProperties) {
                 uint propertyID = property.Key;
                 FieldInfo field = property.Value;
-
                 code.Add(Indent(level) + GetWriteLengthLineForProperty(field));
             }
             code.Add(Indent(level-1) + "} else {");
@@ -338,12 +334,7 @@ namespace Normal.Realtime.Serialization {
             foreach (KeyValuePair<uint, FieldInfo> property in allProperties) {
                 uint propertyID = property.Key;
                 FieldInfo field = property.Value;
-                bool unreliableProperty = unreliableProperties.ContainsKey(propertyID);
-
                 code.Add(Indent(level) + GetWriteLineForProperty(field));
-
-                if (unreliableProperty)
-                    code.Add(Indent(level) + "_" + GetCleanPropertyName(field.Name, false) + "ShouldWrite = false;");
             }
             code.Add(Indent(level-1) + "} else {");
             // Meta model

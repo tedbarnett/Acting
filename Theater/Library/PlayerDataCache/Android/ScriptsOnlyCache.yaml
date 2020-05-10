@@ -1,8 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Brush
+    - BrushStroke
+    - BrushStrokeMesh
+    - MouthMove
     - Normal.Realtime.Examples.CubePlayer
     - Normal.Realtime.Examples.VoiceMouthMove
+    - Normal.Realtime.Examples.VoiceScale
     - Normal.Realtime.Realtime
     - Normal.Realtime.RealtimeAvatar
     - Normal.Realtime.RealtimeAvatarManager
@@ -12,12 +17,18 @@ ScriptsOnlyBuild:
     - Normal.Realtime.Utility.OculusSetFloorTrackingOriginWithoutPlugin
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/mainScene.unity:
+    Assets/Scenes/customAvatar.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -36,6 +47,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -46,27 +59,55 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9844}
+      Script: {instanceID: 9838}
     - Class: 114
-      Script: {instanceID: 9904}
+      Script: {instanceID: 9898}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 10010}
     - Class: 114
-      Script: {instanceID: 10098}
+      Script: {instanceID: 10094}
     - Class: 114
-      Script: {instanceID: 10192}
+      Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 10472}
+      Script: {instanceID: 10330}
     - Class: 114
-      Script: {instanceID: 11144}
+      Script: {instanceID: 10462}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 10920}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 10934}
+    - Class: 114
+      Script: {instanceID: 10988}
+    - Class: 114
+      Script: {instanceID: 11130}
+    - Class: 114
+      Script: {instanceID: 11240}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 114
+      Script: {instanceID: 11438}
+    - Class: 114
+      Script: {instanceID: 11476}
+    - Class: 114
+      Script: {instanceID: 16744}
+    - Class: 114
+      Script: {instanceID: 18004}
+    - Class: 114
+      Script: {instanceID: 18006}
+    - Class: 114
+      Script: {instanceID: 18012}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -115,7 +156,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4118bca6b165eb68e5fbba1ad6c1a57e
     assemblyName: Assembly-CSharp.dll
     namespaceName: Normal.Realtime
     className: RealtimeAvatarVoice
@@ -321,7 +362,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Normal.Realtime
+    namespaceName: Normal.Realtime.Native
     className: AudioPreprocessorPlaybackListener
   - hash:
       serializedVersion: 2
@@ -517,7 +558,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 85be90d045462389b90a3d507382b435
+      Hash: 7c2fb0d544880544fb279c19150bbb1b
     assemblyName: Assembly-CSharp.dll
     namespaceName: Normal.Realtime
     className: AudioOutput
@@ -587,7 +628,37 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 49fec550b93a998b202c05578e9afa2e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouthMove
+  - hash:
+      serializedVersion: 2
+      Hash: 8b08d15dbd36204bf6b5286fe5b5f719
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BrushStrokeMesh
+  - hash:
+      serializedVersion: 2
+      Hash: a074d22b49ac6b04ad6e1dc8645cc51e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BrushStroke
+  - hash:
+      serializedVersion: 2
+      Hash: 49fec550b93a998b202c05578e9afa2e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Normal.Realtime.Examples
+    className: MouthMove
+  - hash:
+      serializedVersion: 2
+      Hash: c383a89cf2bbf2b4fc870e4ec8c358b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Brush
   platform: 13
   scenePathNames:
-  - Assets/Scenes/mainScene.unity
-  playerPath: D:/apk/Theater.apk
+  - Assets/Scenes/customAvatar.unity
+  playerPath: D:/apk/TheaterAvatar.apk
