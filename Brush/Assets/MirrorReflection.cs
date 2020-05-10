@@ -3,12 +3,13 @@ using System.Collections;
 
 // This is in fact just the Water script from Pro Standard Assets,
 // just with refraction stuff removed.
+// see https://forum.unity.com/threads/mirror-reflections-in-vr.416728/
 
 [ExecuteInEditMode] // Make mirror live-update even when not in play mode
 public class MirrorReflection : MonoBehaviour
 {
 	public bool m_DisablePixelLights = true;
-	public int m_TextureSize = 256;
+	public int m_TextureSize = 2048;
 	public float m_ClipPlaneOffset = 0.07f;
 
 	public LayerMask m_ReflectLayers = -1;

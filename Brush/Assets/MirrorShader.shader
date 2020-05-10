@@ -1,4 +1,5 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+// see https://forum.unity.com/threads/mirror-reflections-in-vr.416728/
 
 Shader "FX/MirrorReflection"
 {
