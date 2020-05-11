@@ -5,6 +5,7 @@ Goal is to enable multiple actors to do an improv scene, each using Oculus Quest
 
 Completed (in "Brush" project):
 * Normcore VR multiplayer working (basic avatars, with voice chat, mouth movement)
+* 3D drawing feature works (trigger pressed on right hand)
 * Implemented mirror (using https://assetstore.unity.com/packages/vfx/shaders/standard-ar-vr-mirror-shaders-118971)
 * Running on Oculus Quest under Unity 2019.2f1
 
@@ -13,6 +14,7 @@ Next steps:
 * Object grabbing
 * Locomotion (use OVR Utilities?)
 * Avatar customization (change "costumes")
-* Enabling AR viewing of the performance (per https://normcore.io/documentation/guides/using-ar-as-spectator.html)
+* Improve drawing feature (choose paint color, add objects)
+* Enable AR viewing of the performance (per https://normcore.io/documentation/guides/using-ar-as-spectator.html)
 
 Any help or tips appreciated.
