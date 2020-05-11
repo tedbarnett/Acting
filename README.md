@@ -7,5 +7,6 @@ Next steps:
 * Object grabbing
 * Locomotion (use OVR Utilities?)
 * Avatar customization (change "costumes")
+* Enabling AR viewing of the performance (per https://normcore.io/documentation/guides/using-ar-as-spectator.html)
 
 Any help or tips appreciated.
