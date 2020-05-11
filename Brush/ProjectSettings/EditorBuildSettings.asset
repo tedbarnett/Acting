@@ -11,7 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Mirror.unity
     guid: 5b9c140ae2a22024da7fa73b5384d931
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MirrorAkilli.unity
     guid: 94916464a03b2a944b8b85705b878a20
+  - enabled: 0
+    path: Assets/Scenes/Grabbing.unity
+    guid: 0dcb48354e8aaa143a9133da1b903522
+  - enabled: 1
+    path: Assets/Scenes/mainScene.unity
+    guid: d92d52852837f004087294928405e545
   m_configObjects: {}
