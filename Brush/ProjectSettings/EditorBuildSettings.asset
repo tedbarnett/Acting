@@ -17,7 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Grabbing.unity
     guid: 0dcb48354e8aaa143a9133da1b903522
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/mainScene.unity
     guid: d92d52852837f004087294928405e545
+  - enabled: 1
+    path: Assets/Scenes/Walking.unity
+    guid: 38646e75c91b24d9f991950961a75d46
   m_configObjects: {}
