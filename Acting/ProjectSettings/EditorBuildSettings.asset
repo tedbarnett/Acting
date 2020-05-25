@@ -20,13 +20,17 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Grabbing.unity
     guid: 0dcb48354e8aaa143a9133da1b903522
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/mainScene.unity
     guid: d92d52852837f004087294928405e545
   - enabled: 0
     path: Assets/Scenes/mainSceneGrab.unity
     guid: 338594febd417459196b19cdeac43e46
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/mainSceneWalking.unity
     guid: 1c6c9365faf83425389ffe6c622f1bd8
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4e2927aa8eb8b420e915eb8864259f61,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fa9ba76533d5a4017b4b2bb24741f1ad,
+      type: 2}
