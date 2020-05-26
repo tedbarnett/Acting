@@ -5,18 +5,24 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SketchController : MonoBehaviour
 {
+    public XRController applauseAndLaughterXRController;
     public InputHelpers.Button applauseActivationButton;
     public InputHelpers.Button laughterActivationButton;
+
+
+    public XRController weatherXRController;
     public InputHelpers.Button weatherActivationButton;
 
-    public XRController applauseAndLaughterXRController;
-    public XRController weatherXRController;
 
-    public AudioClip[] applauseSound;
-    public AudioClip[] laughterSound;
+    public AudioClip[] applauseSounds;
+    public AudioClip[] laughterSounds;
+    public Material[] skyBoxMaterials;
 
     public float activationThreshold = 0.1f;
     public AudioSource audio;
+    private int applauseIndex = 0;
+    private int laughterIndex = 0;
+    private int weatherIndex = 0;
 
 
     // Start is called before the first frame update
@@ -32,22 +38,29 @@ public class SketchController : MonoBehaviour
         {
             // APPLAUSE
 
-            audio.clip = applauseSound[0];
+            audio.clip = applauseSounds[applauseIndex];
             audio.Play();
+            applauseIndex++;
+            if (applauseIndex > applauseSounds.Length + 1) applauseIndex = 0;
 
         }
 
         if (CheckIfActivated(applauseAndLaughterXRController, laughterActivationButton))
         {
             // LAUGHTER
-            audio.clip = laughterSound[0];
+            audio.clip = laughterSounds[laughterIndex];
             audio.Play();
+            laughterIndex++;
+            if (laughterIndex > laughterSounds.Length + 1) laughterIndex = 0;
 
         }
 
         if (CheckIfActivated(weatherXRController, weatherActivationButton))
         {
             // WEATHER
+            RenderSettings.skybox = skyBoxMaterials[weatherIndex];
+            weatherIndex++;
+            if (weatherIndex > skyBoxMaterials.Length + 1) weatherIndex = 0;
         }
 
     }
