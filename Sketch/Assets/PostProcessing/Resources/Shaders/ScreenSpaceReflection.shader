@@ -1,7 +1,7 @@
 /**
 \author Michael Mara and Morgan McGuire, Casual Effects. 2015.
 */
-Shader "Hidden/Post FX/Screen Space Reflection"
+Shader "Screen Space Reflection"
 {
     Properties
     {

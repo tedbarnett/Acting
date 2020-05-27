@@ -1,4 +1,4 @@
-Shader "Hidden/Post FX/Fog"
+Shader "Fog"
 {
     Properties
     {

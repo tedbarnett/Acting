@@ -196,7 +196,7 @@ namespace UnityEngine.PostProcessing
             bool taaActive = m_Taa.active && !m_RenderingInSceneView;
             bool dofActive = m_DepthOfField.active && !m_RenderingInSceneView;
 
-            var uberMaterial = m_MaterialFactory.Get("Hidden/Post FX/Uber Shader");
+            var uberMaterial = m_MaterialFactory.Get("Uber Shader");
             uberMaterial.shaderKeywords = null;
 
             var src = source;
@@ -245,7 +245,7 @@ namespace UnityEngine.PostProcessing
             uberActive |= TryPrepareUberImageEffect(m_UserLut, uberMaterial);
 
             var fxaaMaterial = fxaaActive
-                ? m_MaterialFactory.Get("Hidden/Post FX/FXAA")
+                ? m_MaterialFactory.Get("FXAA")
                 : null;
 
             if (fxaaActive)

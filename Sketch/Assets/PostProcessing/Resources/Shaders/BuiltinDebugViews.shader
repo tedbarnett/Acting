@@ -1,4 +1,4 @@
-Shader "Hidden/Post FX/Builtin Debug Views"
+Shader "Builtin Debug Views"
 {
     CGINCLUDE
 
