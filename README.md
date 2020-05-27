@@ -16,7 +16,7 @@ Next steps:
 * Avatar customization (change "costumes")
 * Improve drawing feature (choose paint color, add objects)
 * Enable AR viewing of the performance (per https://normcore.io/documentation/guides/using-ar-as-spectator.html)
-* See Github Issues list above
+* See [Github Issues list](https://github.com/tedbarnett/Acting/issues) above
 
 Starting with basic Normcore features to get multiplayer voice chat working.  Had good luck with the basic Normcore drawing tutorial https://normcore.io/documentation/guides/creating-a-multiplayer-drawing-app.html
 
