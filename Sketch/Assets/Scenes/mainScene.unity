@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -262,10 +262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 388dc7b6a4dc94db6b9f4ca46437d145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applauseAndLaughterXRController: {fileID: 0}
+  applauseAndLaughterXRController: {fileID: 675550900}
   applauseActivationButton: 8
   laughterActivationButton: 6
-  weatherXRController: {fileID: 0}
+  weatherXRController: {fileID: 2004813524}
   weatherActivationButton: 6
   applauseSounds:
   - {fileID: 8300000, guid: 3f28725b45fbc9b47908b28c7e82181a, type: 3}
@@ -274,7 +274,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1104e7240d4b4064089dfbc4c4efe2f3, type: 3}
   - {fileID: 8300000, guid: 95367953d75d4024fa846734061f2059, type: 3}
   laughterSounds:
-  - {fileID: 8300000, guid: f4305d11445789a4fae4dd0b44f8f49e, type: 3}
+  - {fileID: 8300000, guid: 8f6b6158573825d46a09af1755d3f537, type: 3}
   - {fileID: 8300000, guid: 077d44bc4bcea1d4b96584d23adddc9b, type: 3}
   - {fileID: 8300000, guid: e55490ac3139fcc4490d0278cbb4d289, type: 3}
   - {fileID: 8300000, guid: f7aa1eb37673feb40b49c6aec6fd41fd, type: 3}
@@ -301,10 +301,10 @@ MonoBehaviour:
   - {fileID: 2137601234}
   avatarHeadActivationButton: 15
   avatarHeads:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1646962920}
+  - {fileID: 1837508140}
+  - {fileID: 673386818}
+  - {fileID: 864976180}
 --- !u!82 &22247150
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1375,6 +1375,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 672988863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &673386818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3830902199936151938, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &675550900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 518981055331144282, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae26e19cd956134bbdf3c6f65bf393a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &705744959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4527953825659708, guid: c3e493d6227dd1a4e8cb56bc70bcbe34,
@@ -1922,6 +1940,12 @@ Transform:
   m_Father: {fileID: 1622544577}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &864976180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1615893131199876334, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &887145676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2982,7 @@ PrefabInstance:
     - target: {fileID: 518981056587239081, guid: b31a85202f8f64b18b55dc500a9ecea0,
         type: 3}
       propertyPath: m_Name
-      value: VR Rig (1)
+      value: VR Rig
       objectReference: {fileID: 0}
     - target: {fileID: 518981056587239083, guid: b31a85202f8f64b18b55dc500a9ecea0,
         type: 3}
@@ -4261,6 +4285,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f99580de5fd6ef84db2d7762de3f1a0d, type: 3}
+--- !u!1 &1646962920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8863061488915297940, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1661707520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4542,6 +4572,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820292171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1837508140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3889017165015807347, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1843868148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5203,18 @@ MonoBehaviour:
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
+--- !u!114 &2004813524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 518981055150093794, guid: b31a85202f8f64b18b55dc500a9ecea0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294571292}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae26e19cd956134bbdf3c6f65bf393a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2006463103
 PrefabInstance:
   m_ObjectHideFlags: 0
