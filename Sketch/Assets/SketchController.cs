@@ -23,45 +23,85 @@ public class SketchController : MonoBehaviour
     private int applauseIndex = 0;
     private int laughterIndex = 0;
     private int weatherIndex = 0;
+    private bool applauseButtonLastState = false;
+    private bool laughterButtonLastState = false;
+    private bool weatherButtonLastState = false;
+
+
+    public InputHelpers.Button confettiActivationButton;
+    private bool confettiButtonLastState = false;
+    private bool confettiActive = false;
+    private int confettiIndex = 0;
+    private ParticleSystem currentConfettiParticleSystem;
+    public ParticleSystem[] confettiParticleSystems;
+
+    private bool newActivationState;
 
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        currentConfettiParticleSystem = confettiParticleSystems[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(CheckIfActivated(applauseAndLaughterXRController, applauseActivationButton))
+        
+        // APPLAUSE
+        newActivationState = CheckIfActivated(applauseAndLaughterXRController, applauseActivationButton);
+        if (newActivationState && (newActivationState != applauseButtonLastState))
         {
-            // APPLAUSE
 
+            //Debug.Log("applauseIndex = " + applauseIndex);
             audio.clip = applauseSounds[applauseIndex];
             audio.Play();
             applauseIndex++;
-            if (applauseIndex > applauseSounds.Length + 1) applauseIndex = 0;
-
+            if (applauseIndex == applauseSounds.Length) applauseIndex = 0;
         }
+        applauseButtonLastState = newActivationState;
 
-        if (CheckIfActivated(applauseAndLaughterXRController, laughterActivationButton))
+        
+        // LAUGHTER
+        newActivationState = CheckIfActivated(applauseAndLaughterXRController, laughterActivationButton);
+        if (newActivationState && (newActivationState != laughterButtonLastState))
         {
-            // LAUGHTER
+
+            //Debug.Log("laughterIndex = " + laughterIndex);
             audio.clip = laughterSounds[laughterIndex];
             audio.Play();
             laughterIndex++;
-            if (laughterIndex > laughterSounds.Length + 1) laughterIndex = 0;
-
+            if (laughterIndex == laughterSounds.Length) laughterIndex = 0;
         }
+        laughterButtonLastState = newActivationState;
 
-        if (CheckIfActivated(weatherXRController, weatherActivationButton))
+        
+        // WEATHER
+        newActivationState = CheckIfActivated(weatherXRController, weatherActivationButton);
+        if (newActivationState && (newActivationState != weatherButtonLastState))
         {
-            // WEATHER
+            //Debug.Log("skyBoxMaterials.Length = " + skyBoxMaterials.Length + ", weatherIndex = " + weatherIndex);
             RenderSettings.skybox = skyBoxMaterials[weatherIndex];
             weatherIndex++;
-            if (weatherIndex > skyBoxMaterials.Length + 1) weatherIndex = 0;
+            if (weatherIndex == skyBoxMaterials.Length) weatherIndex = 0;
+
         }
+        weatherButtonLastState = newActivationState;
+
+
+        // CONFETTI
+        newActivationState = CheckIfActivated(weatherXRController, confettiActivationButton);
+        if (newActivationState && (newActivationState != confettiButtonLastState))
+        {
+            //Debug.Log("confettiIndex = " + confettiIndex);
+            currentConfettiParticleSystem.Stop();
+            confettiIndex++;
+            if (confettiIndex == confettiParticleSystems.Length) confettiIndex = 0;
+            currentConfettiParticleSystem = confettiParticleSystems[confettiIndex];
+            currentConfettiParticleSystem.Play();
+        }
+        confettiButtonLastState = newActivationState;
 
     }
 
