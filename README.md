@@ -17,4 +17,4 @@ Next steps:
 * Improve drawing feature (choose paint color, add objects)
 * Enable AR viewing of the performance (per https://normcore.io/documentation/guides/using-ar-as-spectator.html)
 
-Any help or tips appreciated.
+Collaborators appreciated.
