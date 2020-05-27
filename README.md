@@ -21,3 +21,5 @@ Next steps:
 Starting with basic Normcore features to get multiplayer voice chat working.  Had good luck with the basic Normcore drawing tutorial https://normcore.io/documentation/guides/creating-a-multiplayer-drawing-app.html
 
 Collaborators appreciated.
+
+![Alpha Screenshot](SketchUnityScreen.JPG)
