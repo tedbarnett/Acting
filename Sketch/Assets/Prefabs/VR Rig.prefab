@@ -230,7 +230,7 @@ MonoBehaviour:
   m_SelectUsage: 14
   m_ActivateUsage: 14
   m_UIPressUsage: 14
-  m_AxisToPressThreshold: 0.5
+  m_AxisToPressThreshold: 0.2
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_HapticHoverExitDuration: 0
   m_LineType: 1
   m_MaxRaycastDistance: 30
-  m_ReferenceFrame: {fileID: 0}
+  m_ReferenceFrame: {fileID: 518981056587239083}
   m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
@@ -10747,7 +10747,7 @@ MonoBehaviour:
   m_SelectUsage: 14
   m_ActivateUsage: 14
   m_UIPressUsage: 14
-  m_AxisToPressThreshold: 0.5
+  m_AxisToPressThreshold: 0.2
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
@@ -10807,7 +10807,7 @@ MonoBehaviour:
   m_HapticHoverExitDuration: 0
   m_LineType: 1
   m_MaxRaycastDistance: 30
-  m_ReferenceFrame: {fileID: 0}
+  m_ReferenceFrame: {fileID: 518981056587239083}
   m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
@@ -11228,7 +11228,7 @@ MonoBehaviour:
   leftTeleportRay: {fileID: 518981056076624253}
   rightTeleportRay: {fileID: 518981054772763255}
   teleportActivationButton: 14
-  activationThreshold: 0.3
+  activationThreshold: 0.1
 --- !u!1 &518981056666029858
 GameObject:
   m_ObjectHideFlags: 0
@@ -11400,7 +11400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7648744112764648569
 Transform:
   m_ObjectHideFlags: 0
@@ -11590,7 +11590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7412046995283809290
 Transform:
   m_ObjectHideFlags: 0
