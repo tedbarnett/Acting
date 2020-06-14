@@ -2989,11 +2989,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023473954, guid: b31a85202f8f64b18b55dc500a9ecea0, type: 3}
+      propertyPath: m_text
+      value: 'B: Sound FX
+
+        A: Applause
+
+
+        Stick down: New avatar'
+      objectReference: {fileID: 0}
     - target: {fileID: 518981054772763254, guid: b31a85202f8f64b18b55dc500a9ecea0,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1250574486}
+    - target: {fileID: 518981054772763254, guid: b31a85202f8f64b18b55dc500a9ecea0,
+        type: 3}
+      propertyPath: m_LineType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 518981054772763255, guid: b31a85202f8f64b18b55dc500a9ecea0,
+        type: 3}
+      propertyPath: m_SelectUsage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 518981054772763255, guid: b31a85202f8f64b18b55dc500a9ecea0,
+        type: 3}
+      propertyPath: m_ActivateUsage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 518981054772763255, guid: b31a85202f8f64b18b55dc500a9ecea0,
+        type: 3}
+      propertyPath: m_UIPressUsage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 518981056076624252, guid: b31a85202f8f64b18b55dc500a9ecea0,
         type: 3}
       propertyPath: m_InteractionManager
@@ -3058,6 +3087,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436138204947569332, guid: b31a85202f8f64b18b55dc500a9ecea0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Y: Confetti
+
+        X: Change Sky
+
+
+        Stick up: Teleport'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31a85202f8f64b18b55dc500a9ecea0, type: 3}

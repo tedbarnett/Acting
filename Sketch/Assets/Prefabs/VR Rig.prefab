@@ -230,7 +230,7 @@ MonoBehaviour:
   m_SelectUsage: 14
   m_ActivateUsage: 14
   m_UIPressUsage: 14
-  m_AxisToPressThreshold: 0.2
+  m_AxisToPressThreshold: 0.5
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 518981056587239083}
-  m_Velocity: 8
+  m_Velocity: 10
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 15
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -10616,8 +10616,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 1000
+  near clip plane: 0.05
+  far clip plane: 50
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -10747,7 +10747,7 @@ MonoBehaviour:
   m_SelectUsage: 14
   m_ActivateUsage: 14
   m_UIPressUsage: 14
-  m_AxisToPressThreshold: 0.2
+  m_AxisToPressThreshold: 0.5
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
@@ -10808,7 +10808,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 518981056587239083}
-  m_Velocity: 8
+  m_Velocity: 10
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -10944,7 +10944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 15
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -11166,7 +11166,7 @@ MonoBehaviour:
   m_CameraGameObject: {fileID: 518981055786863858}
   m_TrackingOriginMode: 2
   m_TrackingSpace: 3
-  m_CameraYOffset: 1.36144
+  m_CameraYOffset: 1.7
 --- !u!114 &518981056587239086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11209,7 +11209,7 @@ MonoBehaviour:
   m_System: {fileID: 518981056587239086}
   m_TurnUsage: 0
   m_Controllers:
-  - {fileID: 518981055331144282}
+  - {fileID: 518981055150093794}
   m_TurnAmount: 45
   m_DebounceTime: 0.5
   m_DeadZone: 0.75
@@ -11228,7 +11228,7 @@ MonoBehaviour:
   leftTeleportRay: {fileID: 518981056076624253}
   rightTeleportRay: {fileID: 518981054772763255}
   teleportActivationButton: 14
-  activationThreshold: 0.1
+  activationThreshold: 0.02
 --- !u!1 &518981056666029858
 GameObject:
   m_ObjectHideFlags: 0
